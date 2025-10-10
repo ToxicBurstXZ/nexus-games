@@ -1,0 +1,103 @@
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #000000;
+            margin: 0;
+            font-family: Arial;
+            overflow: hidden;
+            font-family: monospace, serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        hr {
+            border-color: transparent;
+            border-right-color: rgba(255, 255, 255, 0.8);
+            border-right-width: 40px;
+            position: absolute;
+            bottom: 100%;
+            animation-name: rain;
+            animation-duration: 1s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes rain {
+            from {
+                transform: rotate(90deg) translateX(0);
+            }
+
+            to {
+                transform: rotate(90deg) translateX(calc(100vh + 20px));
+            }
+        }
+
+        .container {
+            position: absolute;
+            top: 35%;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100%;
+            height: auto;
+            overflow: visible;
+            z-index: 10;
+        }
+
+        .title {
+            text-align: center;
+            color: #fff;
+            font-size: 80px;
+            letter-spacing: .10em;
+            text-shadow:
+                0 0 4px #fff,
+                0 0 4px #fff,
+                0 0 4px #fff,
+                0 0 4px #fff,
+                0 0 4px #fff;
+        }
+
+        .testsentence {
+            text-align: center;
+            color: #fff;
+            font-size: 30px;
+            text-shadow:
+                0 0 2px #fff,
+                0 0 2px #fff,
+                0 0 2px #fff,
+                0 0 2px #fff,
+                0 0 2px #fff;
+            margin-bottom: 40px;
+        }
+
+        .tv {
+            color: #A020F0;
+            text-shadow:
+                0 0 2px #A020F0,
+                0 0 2px #A020F0,
+                0 0 2px #A020F0,
+                0 0 2px #A020F0,
+                0 0 2px #A020F0;
+        }
+
+        .ct {
+            color: #6F4E37;
+            text-shadow:
+                0 0 2px #6F4E37,
+                0 0 2px #6F4E37,
+                0 0 2px #6F4E37,
+                0 0 2px #6F4E37,
+                0 0 2px #6F4E37;
+        }
+
+        #type {
+            white-space: nowrap;
+            overflow: hidden;
+            margin: 0 auto;
+            color: #fff;
+            letter-spacing: .15em;
+        }
